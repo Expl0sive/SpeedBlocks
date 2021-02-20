@@ -1,7 +1,33 @@
-*.o
+#game configuration & recording files
 *.cfg
-*.sublime*
-/sfml
+/Recordings/*
 
-# default Code::Blocks output folder
+#possible lib archives
+*.tar.*
+*.zip
+
+#editorproject files
+.idea/
+*.sublime*
+
+
+#cmake and build artifacts
+*.o
+SpeedBlocks
+Makefile*
+CMakeCache.txt
+CMakeFiles/
+build/
 /SpeedBlocks
+/sfml
+/cmake_install.cmake
+install_manifest.txt
+
+#mac shit
+.DS_Store
+
+#automated update/build/upload script to prepare new patch
+patch.sh
+
+#use .gitkeep to track empty directories
+!*.gitkeep
